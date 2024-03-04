@@ -1,0 +1,33 @@
+import = ["/home/bergent/.config/alacritty/themes/themes/oxocarbon.toml"]
+
+[window]
+opacity = 0.99
+
+[window.dimensions]
+columns = 140
+lines = 40
+
+[window.padding]
+x = 16
+y = 16
+
+[font]
+size = 12.0
+
+[font.bold]
+family = "IosevkaTerm Nerd Font"
+style = "Bold"
+
+[font.normal]
+family = "IosevkaTerm Nerd Font"
+style = "Regular"
+
+[font.italic]
+family = "IosevkaTerm Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "IosevkaTerm Nerd Font"
+style = "Bold Italic"
+
+
