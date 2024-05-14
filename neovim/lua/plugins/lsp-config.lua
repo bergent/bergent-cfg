@@ -9,7 +9,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "clangd", "neocmake"},
+        ensure_installed = { "lua_ls", "clangd", "neocmake", "jsonls", "pylsp"},
       })
     end
   },
@@ -27,6 +27,13 @@ return {
         capabilities = caps
       })
       lspconfig.neocmake.setup({
+        capabilities = caps
+      })
+      lspconfig.jsonls.setup({
+        capabilities = caps
+      })
+
+      lspconfig.pylsp.setup({
         capabilities = caps
       })
 

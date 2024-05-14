@@ -26,5 +26,7 @@ return {
     vim.keymap.set('n', '<leader>cr', ':Task start cmake run ', {})
     vim.keymap.set('n', '<leader>cd', ':Task start cmake debug<CR>', {})
     vim.keymap.set('n', '<leader>cp', ':Task set_task_param cmake ', {})
+    vim.keymap.set('n', '<leader>cs', ':Task cancel<CR>', {})
+    vim.keymap.set('n', '<leader>cc', ':Task cancel<CR>', {})
   end
 }

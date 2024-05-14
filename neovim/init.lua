@@ -14,3 +14,5 @@ vim.opt.rtp:prepend(lazypath)
 require("vim-settings")
 require("lazy").setup("plugins")
 
+-- theme
+vim.cmd.colorscheme("gruber-darker")
