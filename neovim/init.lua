@@ -15,4 +15,9 @@ require("vim-settings")
 require("lazy").setup("plugins")
 
 -- theme
-vim.cmd.colorscheme("gruber-darker")
+
+-- clipboard
+vim.api.nvim_set_option("clipboard", "unnamed")
+
+-- markdown viewer 
+vim.g.mkdp_browser = "/usr/bin/firefox"

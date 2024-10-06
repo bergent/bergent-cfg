@@ -15,4 +15,21 @@ vim.cmd(":map <right> <C-w><right>")
 -- etc.
 vim.opt.termguicolors = true
 vim.wo.relativenumber = true
-vim.cmd("set background=light")
+
+-- git conflict
+vim.keymap.set('n', '<leader>ro', ':GitConflictChooseOurs', {})
+vim.keymap.set('n', '<leader>rt', ':GitConflictChooseTheir', {})
+vim.keymap.set('n', '<leader>rb', ':GitConflictChooseBoth', {})
+vim.keymap.set('n', '<leader>rn', ':GitConflictChooseNone', {})
+vim.keymap.set('n', '<leader>rc', ':GitConflictNextConflict', {})
+vim.keymap.set('n', '<leader>Rc', ':GitConflictPrevConflict', {})
+
+-- Neogit 
+vim.keymap.set('n', '<leader>gi', ':Neogit<CR>', {})
+
+-- Russian keyboard 
+vim.cmd('set keymap=russian-jcukenwin')
+vim.cmd('set iminsert=0')
+vim.cmd('set imsearch=0')
+vim.cmd('highlight lCursor guifg=NONE guibg=Cyan')
+vim.cmd('setlocal spell spelllang=ru_yo,en_us')
